@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: gainsboro;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100dvh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dropbox {
+  transition: all 300ms;
+}
+
+.dropbox h1 {
+  color: gainsboro;
+}
+
+.dropbox input[type="file"] {
+  display: none;
+}
+
+.dropbox-hover,
+.dropbox:hover {
+  background: #1d293d;
+  cursor: pointer;
+  width: 51dvw;
+  border: 2px dashed gainsboro;
+}
+
+.preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 90dvw;
+  margin: 0 auto;
+  list-style: none;
+}
+
+button {
+  background: oklch(70.4% 0.04 256.788);
+  color: oklch(92.9% 0.013 255.508);
+  padding: 0.5rem 1rem;
+  border: 0px;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.dropbox {
+  width: 50dvw;
+  aspect-ratio: 16/9;
+  border: 1px dashed gainsboro;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
