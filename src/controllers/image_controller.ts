@@ -15,13 +15,13 @@ function createSignature(payload: Record<string, any>, apiSecret: string) {
 }
 
 export function signUploadRequest(
-  req: Request<any, any, any, { should_secure_asset?: boolean }>,
+  req: Request<any, any, any, { should_secure_asset?: 'true' | 'false' }>,
   res: Response<ApiResponse>
 ) {
-  const validityInMinutes = 30; //in minutes
+  const validityInMinutes = 20; //in minutes
   const offset = Math.max(60 - validityInMinutes, 3) * 60; // offset in seconds (55 minutes in seconds)
   const timestamp = Math.round(new Date().getTime() / 1000) - offset;
-  const shouldSecureAsset = req.query.should_secure_asset == true;
+  const shouldSecureAsset = req.query.should_secure_asset == 'true';
   const payload: Record<string, any> = {
     timestamp,
     folder: "kyc/1",
@@ -75,7 +75,7 @@ export async function deleteFilesFromCloudinary(
     });
   }
 
-  const isValid = !urls.some(
+  const isNotValid = urls.some(
     ({ type, url }) =>
       !type ||
       !url ||
@@ -83,7 +83,7 @@ export async function deleteFilesFromCloudinary(
       !`${url}`.startsWith("https://")
   );
 
-  if (!isValid) {
+  if (isNotValid) {
     return res.status(400).json({
       status: "failed",
       message: "Please provide a valid array of url objects",
